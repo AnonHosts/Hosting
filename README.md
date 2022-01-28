@@ -121,7 +121,7 @@ sudo -i
 apt-get install screen
 apt-get install zip
 screen
-wget https://github.com/nonconsensual/Hosting/archive/refs/heads/main.zip
+wget https://github.com/AnonHosts/hosting/archive/refs/heads/main.zip
 unzip Hosting2022-master
 cd Hosting2022-master
 ```
