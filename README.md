@@ -127,6 +127,7 @@ cd hosting-main
 ```
 To get an onion name you now need to do the following:
 ```
+apt-get install tor
 cp etc/tor/torrc /etc/tor/torrc
 service tor restart
 ```
