@@ -22,9 +22,7 @@ rm /etc/resolv.conf && echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
 Ubuntu 18.04 LTS or other.
 Make sure you have installed Cmake ver 3.2.x or above to install this deployment of hosting.
-```
-sudo apt purge cmake
-```
+
 Download cmake3.13.4 source
 ```
 wget https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4.tar.gz
