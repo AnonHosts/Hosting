@@ -42,6 +42,11 @@ Verify the version is installed correctly
 ```
 cmake  --version 
 ```
+Or 
+sudo apt purge cmake
+sudo snap install cmake --classic
+cmake --version
+
 
 Make sure you have gcc ver 8 or more.
 ```
