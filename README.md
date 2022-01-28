@@ -16,6 +16,10 @@ Reboot System after removing the above packages.
 ```
 sudo reboot
 ```
+If you have problems resolving hostnames after this step, temporarily switch to a public nameserver like 1.1.1.1 (from CloudFlare) or 8.8.8.8 (from Google)
+
+rm /etc/resolv.conf && echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
 Ubuntu 18.04 LTS or other.
 Make sure you have installed Cmake ver 3.2.x or above to install this deployment of hosting.
 ```
