@@ -122,8 +122,8 @@ apt-get install screen
 apt-get install zip
 screen
 wget https://github.com/AnonHosts/hosting/archive/refs/heads/main.zip
-unzip Hosting2022-master
-cd Hosting2022-master
+unzip main.zip
+cd hosting-main
 ```
 To get an onion name you now need to do the following:
 ```
@@ -141,7 +141,7 @@ Replace the default domain with your domain in the following files:
 Quick way to do this is using this code
 
 Go to your hosting-master folder in your home directory
-cd /root/hosting-master/
+cd /root/hosting-main/
 
 
 find ./ -type f -readable -writable -exec sed -i "s/CHANGE-THIS-DOMAIN.COM/CHANGE-THIS-TO-YOUR-OWN-DOMAIN-LOWER-CASE/g" {} \;
@@ -153,7 +153,7 @@ find ./ -type f -readable -writable -exec sed -i "s/First_Name/XXXYOUR-LAST-NAME
 find ./ -type f -readable -writable -exec sed -i "s/Last_Name/XXXYOUR-FIRST-NAME-HEREXXX/g" {} \;
 
 Manual way:
-cd /root/hosting-master/
+cd /root/hosting-main/
 /etc/postfix/sql/alias.cf
 /etc/postfix/sender_login_maps
 /etc/postfix/main.cf
