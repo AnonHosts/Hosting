@@ -88,7 +88,10 @@ There are 3 choices for the alternative gcc (providing /usr/bin/gcc).
 Press  to keep the current choice[*], or type selection number: 
 ```
 For C++ compiler execute:
-```sudo update-alternatives --config g++
+```
+```
+sudo update-alternatives --config g++
+```
 There are 3 choices for the alternative g++ (providing /usr/bin/g++).
 
   Selection    Path            Priority   Status
