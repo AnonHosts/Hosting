@@ -119,7 +119,7 @@ Login to your server as root & download the hosting package:
 ```
 sudo -i
 apt-get install screen
-aptget install zip
+apt-get install zip
 screen
 wget https://github.com/nonconsensual/Hosting/archive/refs/heads/main.zip
 unzip Hosting2022-master
