@@ -95,9 +95,9 @@ There are 3 choices for the alternative gcc (providing /usr/bin/gcc).
 
   Selection    Path            Priority   Status
 ------------------------------------------------------------
-  0            /usr/bin/gcc-9   9         auto mode
+* 0            /usr/bin/gcc-9   9         auto mode
   1            /usr/bin/gcc-7   7         manual mode
-* 2            /usr/bin/gcc-8   8         manual mode
+  2            /usr/bin/gcc-8   8         manual mode
   3            /usr/bin/gcc-9   9         manual mode
 Press  to keep the current choice[*], or type selection number: 
 ```
@@ -131,6 +131,11 @@ rm /etc/resolv.conf && echo "nameserver 8.8.8.8" > /etc/resolv.conf
 ```
 Retry Install custom optimized binaries
 ```
+cd ..
+rm -rf hosting-main
+unzip main.zip
+cd hosting-main
+
 ./install_binaries.sh
 ```
 
