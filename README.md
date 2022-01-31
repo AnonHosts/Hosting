@@ -180,12 +180,13 @@ cat /var/lib/tor/hidden_service/hostname
 ```
 
 Replace the default domain with your domain in the following files:
-```
 Quick way to do this is using this code
 
 Go to your hosting-master folder in your home directory
+```
 cd /root/hosting-main/
-
+```
+Replace your Domains & Name using these.
 ```
 find ./ -type f -readable -writable -exec sed -i "s/CHANGE-THIS-DOMAIN.COM/CHANGE-THIS-TO-YOUR-OWN-DOMAIN-LOWER-CASE/g" {} \;
 
@@ -205,6 +206,7 @@ cd /root/hosting-main/
 /etc/postfix/canonical
 /etc/postfix-clearnet/canonical
 ```
+
 To get the latest mariadb version, you should follow these instructions to add the official repository for your distribution: (https://downloads.mariadb.org/mariadb/repositories/)
 
 Add torproject to our repositories:
