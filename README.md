@@ -138,13 +138,41 @@ cd hosting-main
 
 ./install_binaries.sh
 ```
+apt-get purge tor
 
 To get an onion name you now need to do the following:
-```
+```Update Tor
+1.) nano /etc/apt/sources.list
+make sure you replace <DISTRIBUTION> with your build example for ubuntu 18.04
+  
+  deb https://deb.torproject.org/torproject.org bionic main
+  deb-src https://deb.torproject.org/torproject.org bionic main
+    
+  Then make sure you add the key & install it:
+
+  wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+
+  gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
+  
+If you get an error on these tor hosts means your web host has blocked tor so find another hosting firm not worth asking them why.
+
 apt-get install tor
-cp etc/tor/torrc /etc/tor/torrc
+nano /etc/tor/torrc
+
+Add this at the top of the file
+HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServicePort 80 127.0.0.1:8080
+
+apt-get update && apt-get upgrade
+
 service tor restart
-```
+
+Keep your locally installed files if asked important! [default=N] - press enter
+
+
+now type tor -v
+you should see Jul 06 16:09:22.187 [notice] Tor 0.4.3.5 running on Linux
+
 
 Now there should be an onion domain in `/var/lib/tor/hidden_service/hostname`:
 ```
