@@ -20,6 +20,17 @@ If you have problems resolving hostnames after this step, temporarily switch to 
 
 rm /etc/resolv.conf && echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
+Login to your server as root & download the hosting package:
+```
+sudo -i
+apt-get install screen
+apt-get install zip
+screen
+wget https://github.com/AnonHosts/hosting/archive/refs/heads/main.zip
+unzip main.zip
+cd hosting-main
+```
+
 Ubuntu 18.04 LTS or other.
 Make sure you have installed Cmake ver 3.2.x or above to install this deployment of hosting.
 
@@ -115,16 +126,6 @@ If you have problems resolving hostnames after this step, temporarily switch to 
 rm /etc/resolv.conf && echo "nameserver 8.8.8.8" > /etc/resolv.conf
 ```
 
-Login to your server as root & download the hosting package:
-```
-sudo -i
-apt-get install screen
-apt-get install zip
-screen
-wget https://github.com/AnonHosts/hosting/archive/refs/heads/main.zip
-unzip main.zip
-cd hosting-main
-```
 To get an onion name you now need to do the following:
 ```
 apt-get install tor
