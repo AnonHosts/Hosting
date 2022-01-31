@@ -397,7 +397,7 @@ nano 50-server.cnf
 comment out with # any reference to innodb in mariad config file and troubleshoot
 systemctl start mariadb
 
-if you want to fix the issue with maysql showing a slight error then apply this fix
+if you want to fix the issue with phpmyadmin showing a slight error then apply this fix
 nano /var/www/html/phpmyadmin/libraries/classes/Dbal/DbiMysqli.php
 
 https://github.com/phpmyadmin/phpmyadmin/pull/17304/commits/b2fa57efa66e23de2b0c1bce63ae5dd9fdb3f262
