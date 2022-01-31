@@ -205,13 +205,6 @@ cd /root/hosting-main/
 /etc/postfix/canonical
 /etc/postfix-clearnet/canonical
 ```
-
-
-Now Retry - Install custom optimized binaries
-```
-./install_binaries.sh
-```
-
 To get the latest mariadb version, you should follow these instructions to add the official repository for your distribution: (https://downloads.mariadb.org/mariadb/repositories/)
 
 Add torproject to our repositories:
