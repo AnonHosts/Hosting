@@ -377,6 +377,7 @@ Then edit the database configuration in `/var/www/common.php` and `/etc/postfix/
 
 Last but not least setup the database by running
 ```
+cd /var/www/
 php /var/www/setup.php
 ``` 
 
