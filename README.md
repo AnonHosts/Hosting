@@ -206,9 +206,9 @@ cd /root/hosting-main/
 /etc/postfix/canonical
 /etc/postfix-clearnet/canonical
 ```
-
+```
 To get the latest mariadb version, you should follow these instructions to add the official repository for your distribution: (https://downloads.mariadb.org/mariadb/repositories/)
-
+```
 Add torproject to our repositories:
 ```
 curl --socks5-hostname 127.0.0.1:9050 -sSL http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc > /etc/apt/trusted.gpg.d/torproject.asc
