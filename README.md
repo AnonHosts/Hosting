@@ -169,7 +169,7 @@ cd /root/hosting-main/
 ```
 
 
-Install custom optimized binaries
+Now Retry - Install custom optimized binaries
 ```
 ./install_binaries.sh
 ```
