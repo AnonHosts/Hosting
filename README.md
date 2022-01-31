@@ -387,3 +387,4 @@ systemctl enable hosting-del.timer && systemctl enable hosting.timer
 ```
 
 Final step is to reboot wait about 5 minutes for all services to start and check if everything is working by creating a test account.
+sudo reboot
