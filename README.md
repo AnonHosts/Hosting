@@ -388,3 +388,11 @@ systemctl enable hosting-del.timer && systemctl enable hosting.timer
 
 Final step is to reboot wait about 5 minutes for all services to start and check if everything is working by creating a test account.
 sudo reboot
+
+if after reboot mysql fails 
+cd/etc/mysql/mariadb.conf.d
+nano 50-server.cnf
+comment out with # any reference to innodb in mariad config file and troubleshoot
+systemctl start mariadb
+
+
