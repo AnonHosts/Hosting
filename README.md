@@ -327,8 +327,11 @@ cd /var/www && composer install
 
 For web base database administration, check out the latest phpmyadmin and adminer:
 ```
+mv /var/www/html/phpmyadmin /var/www/html/phpmyadminold
 cd /var/www/html/ && git clone -b STABLE https://github.com/phpmyadmin/phpmyadmin/ && cd phpmyadmin && composer install --no-dev && yarn
+cp /var/www/html/phpmyadminold/config.inc.php /var/www/html/phpmyadmin/
 cd /var/www/html/ && git clone https://github.com/vrana/adminer/ && cd adminer && git submodule update --init
+
 ```
 
 Once installed create a mysql user for phpmyadmin and cofigure it in `/var/www/html/phpmyadmin/config.inc.php` and fill `$cfg['blowfish_secret']` with random characters:
@@ -340,9 +343,6 @@ GRANT ALL PRIVILEGES ON phpmyadmin.* TO 'phpmyadmin'@'%';
 FLUSH PRIVILEGES;
 quit
 
-mv /var/www/html/phpmyadmin /var/www/html/phpmyadminold
-cd /var/www/html/ && git clone -b STABLE https://github.com/phpmyadmin/phpmyadmin/ && cd phpmyadmin && composer install --no-dev && yarn
-cp /var/www/html/phpmyadminold/config.inc.php /var/www/html/phpmyadmin/
 mysql phpmyadmin < /var/www/html/phpmyadmin/sql/create_tables.sql
 ```
 
