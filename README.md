@@ -128,7 +128,8 @@ If you have problems resolving hostnames after this step, temporarily switch to 
 ```
 rm /etc/resolv.conf && echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
-```Retry Install custom optimized binaries
+```
+Retry Install custom optimized binaries
 ```
 ./install_binaries.sh
 ```
