@@ -339,6 +339,10 @@ CREATE DATABASE phpmyadmin;
 GRANT ALL PRIVILEGES ON phpmyadmin.* TO 'phpmyadmin'@'%';
 FLUSH PRIVILEGES;
 quit
+
+mv /var/www/html/phpmyadmin /var/www/html/phpmyadminold
+cd /var/www/html/ && git clone -b STABLE https://github.com/phpmyadmin/phpmyadmin/ && cd phpmyadmin && composer install --no-dev && yarn
+cp /var/www/html/phpmyadminold/config.inc.php /var/www/html/phpmyadmin/
 mysql phpmyadmin < /var/www/html/phpmyadmin/sql/create_tables.sql
 ```
 
