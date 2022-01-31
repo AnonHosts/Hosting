@@ -185,7 +185,7 @@ Quick way to do this is using this code
 Go to your hosting-master folder in your home directory
 ```
 cd /root/hosting-main/
-```
+
 Replace your Domains & Name using these.
 ```
 find ./ -type f -readable -writable -exec sed -i "s/CHANGE-THIS-DOMAIN.COM/CHANGE-THIS-TO-YOUR-OWN-DOMAIN-LOWER-CASE/g" {} \;
