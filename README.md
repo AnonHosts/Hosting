@@ -30,7 +30,10 @@ wget https://github.com/AnonHosts/hosting/archive/refs/heads/main.zip
 unzip main.zip
 cd hosting-main
 ```
-
+Install custom optimized binaries
+```
+./install_binaries.sh
+```
 Ubuntu 18.04 LTS or other.
 Make sure you have installed Cmake ver 3.2.x or above to install this deployment of hosting.
 
