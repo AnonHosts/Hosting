@@ -186,7 +186,7 @@ Quick way to do this is using this code
 Go to your hosting-master folder in your home directory
 cd /root/hosting-main/
 
-
+```
 find ./ -type f -readable -writable -exec sed -i "s/CHANGE-THIS-DOMAIN.COM/CHANGE-THIS-TO-YOUR-OWN-DOMAIN-LOWER-CASE/g" {} \;
 
 find ./ -type f -readable -writable -exec sed -i "s/CHANGE-THIS.ONION/CHANGE-THIS-TO-YOUR-OWN-ONION-DOMAIN-LOWER-CASE/g" {} \;
@@ -194,7 +194,7 @@ find ./ -type f -readable -writable -exec sed -i "s/CHANGE-THIS.ONION/CHANGE-THI
 find ./ -type f -readable -writable -exec sed -i "s/First_Name/XXXYOUR-LAST-NAME-HEREXXX/g" {} \;
 
 find ./ -type f -readable -writable -exec sed -i "s/Last_Name/XXXYOUR-FIRST-NAME-HEREXXX/g" {} \;
-
+```
 Manual way:
 cd /root/hosting-main/
 /etc/postfix/sql/alias.cf
