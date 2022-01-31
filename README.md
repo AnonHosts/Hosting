@@ -335,6 +335,8 @@ cd /var/www/html/ && git clone https://github.com/vrana/adminer/ && cd adminer &
 ```
 
 Once installed create a mysql user for phpmyadmin and cofigure it in `/var/www/html/phpmyadmin/config.inc.php` and fill `$cfg['blowfish_secret']` with random characters:
+nano /var/www/html/phpmyadmin/config.inc.php
+make sure you change the password section in the file to your mysql password or you wil get errors when logging into phpmyadmin.
 ```
 mysql
 CREATE USER 'phpmyadmin'@'%' IDENTIFIED BY 'MY_PASSWORD';
