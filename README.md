@@ -34,7 +34,7 @@ Install custom optimized binaries
 ```
 ./install_binaries.sh
 ```
-Ubuntu 18.04 LTS or other.
+Possible Issues upon installing binaries scrips - Ubuntu 18.04 LTS or other.
 Make sure you have installed Cmake ver 3.2.x or above to install this deployment of hosting.
 
 Download cmake3.13.4 source
