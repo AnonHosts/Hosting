@@ -55,6 +55,8 @@ sudo make install
 Verify the version is installed correctly
 ```
 cmake  --version 
+you may need to add a sym link
+ln -s /usr/local/bin/cmake /usr/bin/cmake
 ```
 Or 
 ```
