@@ -324,6 +324,7 @@ quotaon /home
 
 Install sodium_compat for v3 hidden_service support
 ```
+rm /etc/resolv.conf && echo "nameserver 8.8.8.8" > /etc/resolv.conf
 cd /var/www && composer install
 ```
 
